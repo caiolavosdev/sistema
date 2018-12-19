@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pismo": {
+    "sistema": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pismo",
+            "outputPath": "dist/sistema",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -56,18 +56,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "pismo:build"
+            "browserTarget": "sistema:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "pismo:build:production"
+              "browserTarget": "sistema:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pismo:build"
+            "browserTarget": "sistema:build"
           }
         },
         "test": {
@@ -101,7 +101,7 @@
         }
       }
     },
-    "pismo-e2e": {
+    "sistema-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -109,7 +109,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "pismo:serve"
+            "devServerTarget": "sistema:serve"
           }
         },
         "lint": {
@@ -124,5 +124,5 @@
       }
     }
   },
-  "defaultProject": "pismo"
+  "defaultProject": "sistema"
 }
